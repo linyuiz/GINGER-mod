@@ -67,7 +67,7 @@ executor >  local (15)
 [04/a45ad3] process > finalize_genes (Fungi)     [100%] 1 of 1 ✔
 Duration    : 4h 6m 17s
 CPU hours   : 330.1 
-Succeeded   : 21
+Succeeded   : 24
 
 #######Results#######
 Output: /project/fungi/output_of_GINGER-mod/
