@@ -65,7 +65,7 @@ output dir = /project/test/NIP/output_of_GINGER-mod
 [6c/998f08] process > reconstruct (NIP)      [100%] 1 of 1 ✔
 [01/75536c] process > finalize_genes (NIP)   [100%] 1 of 1 ✔
 Duration    : 6h 27m 46s
-CPU hours   : 616.7 (1.3% failed)
+CPU hours   : 616.7 
 
 #######Results#######
 Output: /project/test/NIP/output_of_GINGER-mod/
