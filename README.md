@@ -14,22 +14,24 @@ Taniguchi T, Okuno M, Shinoda T, Kobayashi F, Takahashi K, Yuasa H, Nakamura Y, 
 
 # Run log:
 ```shell
-#######Data#######
+#######Run#######
+N E X T F L O W  ~  version 21.04.0
+========== Run_GINGER.cfg ==========
 ##Info
-☆data_work_mode=local                         #work mode(local|slurm)
-☆data_sample_name=Fungi                       #sample name
-☆data_max_retries=3                           #nextflow max retries
+☆data_work_mode=slurm                         #local/slurm
+☆data_sample_name=NIP                         #sample name
+☆data_max_retries=2                           #nextflow max retries
 ☆data_genome_fa=00.data/genome_unmask.fa      #unmask genome
 ☆data_mask_genome=00.data/genome_masked.fa    #soft-masked(A->a) genome
-☆data_RM_out=none                             #RepeatMasker output(.out|none)
+☆data_RM_out=00.data/genome_RM2.out           #RepeatMasker output
 ☆data_rnaseq_list=00.data/used.trans.list     #RNAseq list
 ☆data_homopep_list=00.data/used.homo.list     #homology protein list
 ##TransAnno
-hisat_para_n=2                                 #hisat parallel task num
+hisat_para_n=3                                 #hisat parallel task num
 hisat_each_threads=30                          #hisat each task threads(multi tasks)
-stringtie_threads=60                           #stringite_threads(only 1 task)
+stringtie_threads=30                           #stringite_threads(only 1 task)
 trinity_threads=60                             #trinity threads(only 1 task)
-trinity_memory=100G                            #trinity max memory
+trinity_memory=200G                            #trinity max memory
 gmap_threads=60                                #gmap threads(only 1 task)
 ##HomoAnno
 spaln_para_n=3                                 #spaln parallel task num
@@ -39,36 +41,33 @@ augustus_train_threads=60                      #augustus train threads(only 1 ta
 augustus_predict_threads=60                    #augustus predict threads
 ##Images
 images_bind="-B /project"
-images_path=/project501/zhangyaolong/Docker/02.github_images/zgtools
+images_path=00.data/zgtools_v0.1.5.sif
 
-#######Run#######
-N E X T F L O W  ~  version 21.04.0
-Launching `/pipeline/zgtools/scripts/nextflow/ginger/ginger-mod.nf` [berserk_banach] - revision: 23b1dabf34
-temp dir   = /project/fungi/tmp_of_GINGER-mod
-output dir = /project/fungi/output_of_GINGER-mod
-executor >  local (15)
-[8a/9aea4f] process > hisat_index (Fungi)        [100%] 1 of 1 ✔
-[95/4fa8d6] process > hisat_align (5-1)          [100%] 2 of 2 ✔
-[d0/b0f09b] process > bam_merge (Fungi)          [100%] 1 of 1 ✔
-[35/13fe72] process > stringtie (Fungi)          [100%] 1 of 1 ✔
-[be/cfdd46] process > trans_orf (Fungi)          [100%] 1 of 1 ✔
-[c7/21d3de] process > learn_1st (Fungi)          [100%] 1 of 1 ✔
-[2b/012b08] process > learn_2nd (Fungi)          [100%] 1 of 1 ✔
-[fe/0c96d1] process > trinity (Fungi)            [100%] 1 of 1 ✔
-[a0/7c20e7] process > trans_align (Fungi)        [100%] 1 of 1 ✔
-[07/935ba1] process > spaln (Morchella_brunnea)  [100%] 3 of 3 ✔
-[cd/5c488c] process > homology_filter (Fungi)    [100%] 1 of 1 ✔
-[a9/66127f] process > augustus_train (Fungi)     [100%] 1 of 1 ✔
-[9d/5a3f40] process > augustus_prepare (Fungi)   [100%] 1 of 1 ✔
-[ed/e787cd] process > augustus_predict (Fungi)   [100%] 1 of 1 ✔
-[42/7bb8dd] process > snap (learn_2nd)           [100%] 1 of 1 ✔
-[a2/ce4558] process > prepare_evidence (Fungi)   [100%] 1 of 1 ✔
-[7c/01ed28] process > reconstruct (Fungi)        [100%] 1 of 1 ✔
-[04/a45ad3] process > finalize_genes (Fungi)     [100%] 1 of 1 ✔
-Duration    : 4h 6m 17s
-CPU hours   : 330.1 
-Succeeded   : 24
+====================================
+temp dir   = /project/test/NIP/tmp_of_GINGER-mod
+output dir = /project/test/NIP/output_of_GINGER-mod
+[d2/d7dbc3] process > hisat_index (NIP)      [100%] 1 of 1 ✔
+[f3/76e731] process > hisat_align (NIP-rna)  [100%] 1 of 1 ✔
+[2b/3601fd] process > bam_merge (NIP)        [100%] 1 of 1 ✔
+[10/88af2a] process > stringtie (NIP)        [100%] 1 of 1 ✔
+[1a/e47953] process > trans_orf (NIP)        [100%] 1 of 1 ✔
+[68/e3c852] process > learn_1st (NIP)        [100%] 1 of 1 ✔
+[f4/c0ae99] process > learn_2nd (NIP)        [100%] 1 of 1 ✔
+[e3/3be0db] process > trinity (NIP)          [100%] 1 of 1 ✔
+[ba/949e7a] process > trans_align (NIP)      [100%] 1 of 1 ✔
+[72/2fc7f3] process > spaln (ZS97RS3)        [100%] 4 of 4 ✔
+[58/90445c] process > homology_filter (NIP)  [100%] 1 of 1 ✔
+[fe/9f6ae9] process > augustus_train (NIP)   [100%] 1 of 1 ✔
+[ab/b3cfa4] process > augustus_prepare (NIP) [100%] 1 of 1 ✔
+[fc/00b3dd] process > augustus_predict (NIP) [100%] 1 of 1 ✔
+[16/e05cf9] process > snap (learn_2nd)       [100%] 1 of 1 ✔
+[e7/9c7b72] process > prepare_evidence (NIP) [100%] 1 of 1 ✔
+[6c/998f08] process > reconstruct (NIP)      [100%] 1 of 1 ✔
+[01/75536c] process > finalize_genes (NIP)   [100%] 1 of 1 ✔
+Duration    : 6h 27m 46s
+CPU hours   : 616.7 (1.3% failed)
 
 #######Results#######
-Output: /project/fungi/output_of_GINGER-mod/
+Output: /project/test/NIP/output_of_GINGER-mod/
+
 ```
