@@ -8,13 +8,26 @@ weighted and scored exon/intron/intergenic regions. Different prediction
 processes and filtering criteria are applied to multi-exon and single-exon
 genes. This pipeline is implemented using `Nextflow`.    
 
+# Introduction（GINGER-mod）
+`GINGER-mod` is a modified version of `C-Phasing`, featuring the following enhancements:
+
+1️⃣ Refactor the `nextflow + shell` pipeline to improve script readability and maintainability.
+
+2️⃣ Support both `local` execution and `slurm` cluster deployment, ensuring seamless job scheduling and resource management across environments.
+
+3️⃣ The current output will provide a UTR-containing GFF file along with more detailed GFF statistical results.
+
+4️⃣ Added comparison of elements such as gene/CDS/intron/exon between individual evidence GFFs and the final GFF.
+
+5️⃣ Provide enhanced resumption capabilities for convenient continuation of interrupted runs, minimizing redundant computation and facilitating incremental updates.
+
 ⭐️If you encounter any issues, feel free to ask in the issue section. Please also support the original authors. **If you use `GINGER-mod`, kindly cite it:**   
 Taniguchi T, Okuno M, Shinoda T, Kobayashi F, Takahashi K, Yuasa H, Nakamura Y, Tanaka H, Kajitani R, Itoh T. GINGER: an integrated method for high-accuracy prediction of gene structure in higher eukaryotes at the gene and exon level. DNA Res. 2023 Aug 1;30(4) <https://doi.org/10.1093/dnares/dsad017>
 
 # Other modified versions of the software
 <div align="center"><img alt="image" src="https://github.com/user-attachments/assets/729a8e17-94a4-492a-8d01-c902303c06a1" width=30%/></div>
 
-⭐️ For the modified version of scaffolding tool `C-Phasing`, please visit: [CPhasing-mod](https://github.com/linyuiz/CPhasing-mod)   
+⭐️ For the modified version of scaffolding tool `C-Phasing`, please visit: [GINGER-mod](https://github.com/linyuiz/GINGER-mod)   
 
 ⭐️ For the modified version of TE transposon annotation tool `EDTA`, please visit: [EDTA-mod](https://github.com/linyuiz/EDTA-mod) (Beta version)  
 
