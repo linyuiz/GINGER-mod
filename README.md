@@ -215,5 +215,5 @@ Output: /project/test/NIP/output_of_GINGER-mod/
 ├── GINGER.gene.gff_distribution.*   longest gff3 distribution
 └── GINGER.trans.map_stat.xls        transcriptome mapping rate
 ```
-⭐️Below is a comparison of the annotation results of the GINGER-mod version with those of other rice genome versions：
+⭐️Below is a comparison of the annotation results of the GINGER-mod version with those of other rice genome versions：     
 <img alt="image" src="https://github.com/user-attachments/assets/a75fa3b7-3e71-4eb9-b65f-6b045fed7fe0" width=50%/>
