@@ -85,6 +85,42 @@ augustus_predict_threads=60                    #augustus predict threads
 images_bind="-B /project"
 images_path=~/images/zgtools_v0.1.6.sif
 ```
+2️⃣ Edit `example.used.trans.list`; currently, only second-generation transcriptomes are supported, and full-length transcriptomes are not supported.    
+```
+fastq   5-1     /your/absolute/path/5-1_raw_1.fq.gz,/your/absolute/path/5-1_raw_2.fq.gz
+fastq   6-1     /your/absolute/path/6-1_raw_1.fq.gz,/your/absolute/path/6-1_raw_2.fq.gz
+```
+3️⃣ Edit `example.used.homo.list`; you can include any number of protein files from closely related species, but generally it is recommended to include 5-6 high-quality annotations.    
+```
+Pezizomy        Morchella_angusticeps   /your/absolute/path/Morchella_angusticeps.pep.fa
+Pezizomy        Morchella_brunnea       /your/absolute/path/Morchella_brunnea.pep.fa
+Pezizomy        Morchella_eximia        /your/absolute/path/Morchella_eximia.pep.fa
+```
+Translate the following text:
+Note: The first column is mandatory for Spaln. Only modify it after checking example.splan.check.txt:    
+```
+Angiosp   被子植物（拟南芥、水稻、玉米等）             
+Magnolio  单子叶植物（水稻、玉米、高粱、等）           
+Eudicoty  双子叶植物（拟南芥、番茄、大豆等）           
+Tetrapod  四足动物（人、小鼠、鸡、蛙等）               
+Fish_mdl  鱼类（斑马鱼、青鳉等模式鱼）                 
+InsectDm  昆虫-果蝇类（Drosophila及近缘）              
+NematodC  线虫-秀丽隐杆线虫类（Caenorhabditis及近缘）  
+Saccharo  酵母-酿酒酵母类（Saccharomyces及近缘）       
+Schizosa  酵母-粟酒裂殖酵母类（Schizosaccharomyces）   
+FungiAll  真菌通用（不挑具体类群时用）                 
+ChordatC  尾索动物（海鞘、玻璃海鞘）                   
+ChordatU  头索动物/无脊椎脊索动物（文昌鱼、海兔等）     
+Echinode  棘皮动物（海胆、海星）                       
+Mollusca  软体动物（牡蛎、鲍鱼等）                     
+InsectAc  昆虫-膜翅目（蚂蚁、蜜蜂）                    
+InsectAg  昆虫-蚜虫/蝽类（蚜虫、蝽）                   
+InsectBm  昆虫-鳞翅目（家蚕）                          
+Aconoida  顶复门（弓形虫、疟原虫，无锥体）             
+Archamoe  古虫/变形虫（阿米巴、利什曼原虫）            
+Conoidas  顶复门-锥体虫                                
+```
+example.splan.check.txt
 2️⃣ Then, run `zgtools GINGER-mod Run_GINGER.cfg`. If want to stop the job, please press `Ctrl + C`, not​ `Ctrl + Z`.      
 
 ---
