@@ -28,10 +28,13 @@ Taniguchi T, Okuno M, Shinoda T, Kobayashi F, Takahashi K, Yuasa H, Nakamura Y, 
 
 # Other modified versions of the software
 <div align="center"><img alt="image" src="https://github.com/user-attachments/assets/729a8e17-94a4-492a-8d01-c902303c06a1" width=30%/></div>
+⭐️ For the modified version of scaffolding tool `C-Phasing`, please visit: [CPhasing-mod](https://github.com/linyuiz/CPhasing-mod)    
 
-⭐️ For the modified version of scaffolding tool `GINGER`, please visit: [GINGER-mod](https://github.com/linyuiz/GINGER-mod)   
+⭐️ For the modified version of TE transposon annotation tool `EDTA`, please visit: [EDTA-mod](https://github.com/linyuiz/EDTA-mod)   
 
-⭐️ For the modified version of TE transposon annotation tool `EDTA`, please visit: [EDTA-mod](https://github.com/linyuiz/EDTA-mod) (Beta version)  
+⭐️ For the modified version of scaffolding tool `GINGER`, please visit: [GINGER-mod](https://github.com/linyuiz/GINGER-mod)    
+
+⚠️ For the modified version of annotation tool `EviAnn`, please visit: [EviAnn-mod](https://github.com/linyuiz/EviAnn-mod) (Not recommended for now, currently under upgrade)  
 
 ---
 
