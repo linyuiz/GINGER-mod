@@ -9,7 +9,7 @@ processes and filtering criteria are applied to multi-exon and single-exon
 genes. This pipeline is implemented using `Nextflow`.    
 
 # Introduction（GINGER-mod）
-`GINGER-mod` is a modified version of `C-Phasing`, featuring the following enhancements:
+`GINGER-mod` is a modified version of `GINGER`, featuring the following enhancements:
 
 1️⃣ Refactor the `nextflow + shell` pipeline to improve script readability and maintainability.
 
@@ -21,13 +21,15 @@ genes. This pipeline is implemented using `Nextflow`.
 
 5️⃣ Provide enhanced resumption capabilities for convenient continuation of interrupted runs, minimizing redundant computation and facilitating incremental updates.
 
+6️⃣ Fixed some software bugs and adjusted the parallelization strategy.
+
 ⭐️If you encounter any issues, feel free to ask in the issue section. Please also support the original authors. **If you use `GINGER-mod`, kindly cite it:**   
 Taniguchi T, Okuno M, Shinoda T, Kobayashi F, Takahashi K, Yuasa H, Nakamura Y, Tanaka H, Kajitani R, Itoh T. GINGER: an integrated method for high-accuracy prediction of gene structure in higher eukaryotes at the gene and exon level. DNA Res. 2023 Aug 1;30(4) <https://doi.org/10.1093/dnares/dsad017>
 
 # Other modified versions of the software
 <div align="center"><img alt="image" src="https://github.com/user-attachments/assets/729a8e17-94a4-492a-8d01-c902303c06a1" width=30%/></div>
 
-⭐️ For the modified version of scaffolding tool `C-Phasing`, please visit: [GINGER-mod](https://github.com/linyuiz/GINGER-mod)   
+⭐️ For the modified version of scaffolding tool `GINGER`, please visit: [GINGER-mod](https://github.com/linyuiz/GINGER-mod)   
 
 ⭐️ For the modified version of TE transposon annotation tool `EDTA`, please visit: [EDTA-mod](https://github.com/linyuiz/EDTA-mod) (Beta version)  
 
@@ -96,6 +98,7 @@ augustus_predict_threads=60                    #augustus predict threads
 images_bind="-B /project"
 images_path=~/images/zgtools_v0.1.6.sif
 ```
+Note that `genome_RM.out` can be used with the annotation results from [EDTA-mod](https://github.com/linyuiz/EDTA-mod).    
 2️⃣ Edit `example.used.trans.list`; currently, only second-generation transcriptomes are supported, and full-length transcriptomes are not supported.    
 ```
 fastq   5-1     /your/absolute/path/5-1_raw_1.fq.gz,/your/absolute/path/5-1_raw_2.fq.gz
