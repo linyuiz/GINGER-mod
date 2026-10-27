@@ -22,7 +22,7 @@ Taniguchi T, Okuno M, Shinoda T, Kobayashi F, Takahashi K, Yuasa H, Nakamura Y, 
 
 # Installation
 ## Install with conda/mamba (Linux64) 
-To install, first download the latest distribution tarball：[zgtools_latest.tar.gz](https://github.com/linyuiz/zgtools/releases) (not one of the Source code files!) from the github release page：https://github.com/linyuiz/GINGER-mod/releases/. 
+To install, first download the latest distribution tarball：[zgtools_latest.tar.gz](https://github.com/linyuiz/zgtools/releases) (not one of the Source code files!) from the github release page：https://github.com/linyuiz/zgtools/releases/. 
 
 ```shell
 #1. nextflow install
@@ -118,15 +118,14 @@ Aconoida  顶复门（弓形虫、疟原虫，无锥体）
 Archamoe  古虫/变形虫（阿米巴、利什曼原虫）            
 Conoidas  顶复门-锥体虫                                
 ```
-example.splan.check.txt
-2️⃣ Then, run `zgtools GINGER-mod Run_GINGER.cfg`. If want to stop the job, please press `Ctrl + C`, not​ `Ctrl + Z`.      
+4️⃣ run `zgtools GINGER-mod Run_GINGER.cfg`. If want to stop the job, please press `Ctrl + C`, not​ `Ctrl + Z`.      
 
 ---
 
 # Run log:
 This example was tested using the rice T2T-NIP genome. You can download the genome and transcriptome data here:    
-https://ngdc.cncb.ac.cn/gwh/ncbi_assembly/2417393/show   
-https://ngdc.cncb.ac.cn/gsa/browse/insdc/SRA1669491/SRX20950525   
+Genome: https://ngdc.cncb.ac.cn/gwh/ncbi_assembly/2417393/show   
+RNA data: https://ngdc.cncb.ac.cn/gsa/browse/insdc/SRA1669491/SRX20950525   
 ```shell
 #######Run#######
 N E X T F L O W  ~  version 21.04.0
