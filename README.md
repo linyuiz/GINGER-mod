@@ -95,7 +95,7 @@ Pezizomy        Morchella_brunnea       /your/absolute/path/Morchella_brunnea.pe
 Pezizomy        Morchella_eximia        /your/absolute/path/Morchella_eximia.pep.fa
 ```
 Translate the following text:
-Note: The first column is mandatory for Spaln. Only modify it after checking example.splan.check.txt:    
+Note: The first column is mandatory for Spaln. Only modify it after checking `example.splan.check.txt`:    
 ```
 Angiosp   被子植物（拟南芥、水稻、玉米等）             
 Magnolio  单子叶植物（水稻、玉米、高粱、等）           
