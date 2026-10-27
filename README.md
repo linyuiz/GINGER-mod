@@ -90,8 +90,9 @@ images_path=~/images/zgtools_v0.1.6.sif
 ---
 
 # Run log:
-This example was tested using the rice T2T-NIP genome. You can download the genome and transcriptome data here: https://ngdc.cncb.ac.cn/gwh/ncbi_assembly/2417393/show and 
-https://ngdc.cncb.ac.cn/gsa/browse/insdc/SRA1669491/SRX20950525
+This example was tested using the rice T2T-NIP genome. You can download the genome and transcriptome data here:    
+https://ngdc.cncb.ac.cn/gwh/ncbi_assembly/2417393/show   
+https://ngdc.cncb.ac.cn/gsa/browse/insdc/SRA1669491/SRX20950525   
 ```shell
 #######Run#######
 N E X T F L O W  ~  version 21.04.0
@@ -100,9 +101,9 @@ N E X T F L O W  ~  version 21.04.0
 ☆data_work_mode=slurm                         #local/slurm
 ☆data_sample_name=NIP                         #sample name
 ☆data_max_retries=2                           #nextflow max retries
-☆data_genome_fa=00.data/genome_unmask.fa      #unmask genome
-☆data_mask_genome=00.data/genome_masked.fa    #soft-masked(A->a) genome
-☆data_RM_out=00.data/genome_RM2.out           #RepeatMasker output
+☆data_genome_fa=00.data/genome_unmask.fa      #unmask genome(must)
+☆data_mask_genome=00.data/genome_masked.fa    #soft-masked(A->a) genome(must)
+☆data_RM_out=00.data/genome_RM.out            #RepeatMasker output(.out|none)
 ☆data_rnaseq_list=00.data/used.trans.list     #RNAseq list
 ☆data_homopep_list=00.data/used.homo.list     #homology protein list
 ##TransAnno
