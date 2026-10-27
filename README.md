@@ -232,4 +232,15 @@ Output: /project/test/NIP/output_of_GINGER-mod/
 └── GINGER.trans.map_stat.xls        transcriptome mapping rate
 ```
 ⭐️Below is a comparison of the annotation results of the GINGER-mod version with those of other rice genome versions：     
-<img alt="image" src="https://github.com/user-attachments/assets/a75fa3b7-3e71-4eb9-b65f-6b045fed7fe0" width=50%/>
+| ID | All | Longest | BUSCO-embryophyta_odb10 |
+|:---:|:---:|:---:|:---:|
+| Azucena | 51,365 | 34,725 | C:91.6%[S:89.3%,D:2.4%],F:3.4%,M:5.0% |
+| MH63RS3 | 89,083 | 57,080 | C:86.1%[S:83.4%,D:2.7%],F:2.9%,M:11.0% |
+| IRGSP1.0 | 51,210 | 26,232 | C:73.9%[S:72.2%,D:1.7%],F:4.5%,M:21.6% |
+| ZS97RS3 | 88,145 | 58,871 | C:89.9%[S:87.9%,D:2.0%],F:2.0%,M:8.1% |
+| Kitaake | 48,494 | 35,048 | C:99.2%[S:96.9%,D:2.3%],F:0.4%,M:0.4% |
+| Y476 | 37,592 | 34,569 | C:95.3%[S:93.3%,D:2.0%],F:0.7%,M:4.0% |
+| ZH11 | 67,633 | 56,948 | C:96.8%[S:94.2%,D:2.6%],F:1.4%,M:1.9% |
+| T2T-NIP | 67,818 | 57,120 | C:91.4%[S:89.2%,D:2.2%],F:4.9%,M:3.7% |
+| T2T-NIP(GINGER-mod) | 34,058 | 34,058 | C:98.5%[S:96.1%,D:2.4%],F:0.1%,M:1.4% |
+
