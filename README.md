@@ -45,7 +45,7 @@ To install, first download the latest distribution tarball：[zgtools_latest.tar
 
 ```shell
 #1. nextflow install
-mamba create -n GINGER-mod -c conda-forge -c bioconda nextflow=21.04.0=h4a94de4_0 singularity=3.8.6=hf1ae047_0
+mamba create -n zgtools -c conda-forge -c bioconda nextflow=21.04.0=h4a94de4_0 singularity=3.8.6=hf1ae047_0
 #2. zgtools GINGER-mod install
 tar -zxvf zgtools*.tar.gz && cd zgtools && chmod +x zg*
 #3. add zgtools to your $PATH:
